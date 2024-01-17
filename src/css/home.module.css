@@ -1,0 +1,278 @@
+
+.main{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke !important;
+    width: 100vw;
+    height: 100vh;
+    gap:2rem;
+    
+  }
+  
+  /* font-family: var(--font-mono); */
+ 
+  .diagonal-line {
+    width: 200vw;
+    height: 2px; /* Adjust the thickness of the line as needed */
+    background-color: #000; 
+    transform: rotate(40deg);
+    transform-origin: top left;
+    /* Adjust the color of the line as needed */
+  }
+
+  .journey{
+    color: #000;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.body{
+    display: grid;
+    width: 100vw;
+    padding: 4rem 5rem;
+    grid-template-columns: repeat(auto-fill, 350px); 
+    row-gap:5rem;
+    grid-auto-flow: dense;
+    overflow-y: scroll;
+}
+.common {
+    width:300px;
+    height: 250px;
+    background-color: rgb(231, 230, 230);
+   border-radius: 0.5rem;
+   border: solid 1px rgb(255, 255, 255) !important;
+   box-shadow: 5px 2px ;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.grovify-img{
+  
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+  width: 150px;
+height: 82.54px;
+border: solid 1px rgb(127, 124, 124);
+border-radius: 0.5rem;
+
+}
+.grovify-img1{
+  grid-column: 3 / 5;
+  grid-row: 1/4;
+  width: 150px;
+  height: 123.81px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.grovify-img2{
+  grid-column: 1 / 3;
+  grid-row: 3/5;
+  width: 75px;
+  height: 105px;
+ border: solid 1px rgb(127, 124, 124);
+ border-radius: 0.5rem;
+}
+.grovify-img4{
+  height: 62.5px;
+  width: 225px;
+  grid-column: 2/5;
+  grid-row: 4;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+  
+}
+.grovify-img5{
+  height: 25px;
+  width: 300px;
+  margin-top: 20px;
+  grid-column: 1/5;
+  grid-row: 5;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.grovify-img6{
+  height: 41.27px;
+  width: 75px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.grovify{
+  display: grid;
+  width:300px;
+  height: 250px;
+  grid-template-columns: repeat(4,25%); 
+  grid-template-rows: repeat(6,41.67px);
+  grid-row-gap: 0;
+  gap:0;
+ 
+}
+.ga{
+  display: grid;
+  width:300px;
+  height: 250px;
+  grid-template-columns: repeat(4,25%); 
+  grid-template-rows: repeat(6,41.67px);
+  grid-row-gap: 0;
+  gap:0;
+}
+.rfsuny{
+  height: 166.7px;
+  width: 225px;
+  grid-column: 1/3;
+  grid-row: 1/4;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.BLe{
+  width: 75px;
+  height: 83.34px;
+  grid-column: 4/5;
+  grid-row: 1/3;
+  border: solid 1px rgb(127, 124, 124);border-radius: 0.5rem;
+}
+
+.adc{
+  width: 75px;
+  height: 83.34px;
+  grid-column: 4/5;
+  grid-row: 3/4;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.ecg{
+  width: 150px;
+  height:41.67px ;
+  grid-row: 5;
+  grid-column: 1/3;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+  
+.TI{
+  width: 150px;
+  height:41.67px ;
+  grid-row: 5;
+  grid-column: 3/5;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.noteapp{
+  display: grid;
+  width:300px;
+  height: 250px;
+  grid-template-columns: repeat(4,25%); 
+  grid-template-rows: repeat(6,41.67px);
+  grid-row-gap: 0;
+  gap:0;
+}
+.note1{
+grid-column: 3/5;
+grid-row: 1/2;
+width: 150px;
+height: 83.34px;
+border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.note2{
+  grid-column: 1/4;
+  grid-row: 3/6;
+  width: 225px;
+  height: 125px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.note3{
+  grid-column: 1/3;
+  grid-row: 1/3;
+  width: 150px;
+height: 83.34px;
+border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.note4{
+  grid-row: 3/4;
+  grid-column: 4/5;
+  width: 75px;
+  height: 83.34px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.note5{
+  grid-row: 5/6;
+  grid-column: 4/5;
+  width: 75px;
+  height: 41.67px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.parkinglot{
+  display: grid;
+  width:300px;
+  height: 250px;
+  grid-template-columns: repeat(4,25%); 
+  grid-template-rows: repeat(6,41.67px);
+  grid-row-gap: 0;
+  gap:0;
+}
+.parking1{
+  grid-column: 1/5;
+  grid-row: 1/3;
+  width: 300px;
+  height: 125px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.parking2{
+  grid-row: 4/6;
+  grid-column: 1/2;
+  width: 75px;
+  height: 83.34px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.parking3{
+  grid-row: 4/6;
+  grid-column: 2/3;
+  width: 75px;
+  height: 83.34px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+.parking4{
+  grid-row: 4/6;
+  grid-column: 3/5;
+  width: 150px;
+  height: 83.34px;
+  border: solid 1px rgb(127, 124, 124);
+  border-radius: 0.5rem;
+}
+
+.grovify-app{
+
+margin-top: 10px;
+font-size: 25px;
+width: 300px;
+grid-row: 6;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+color: black;
+}
+.sub{
+ 
+  font-size: 15px;
+  font-style: italic;
+
+}

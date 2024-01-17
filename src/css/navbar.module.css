@@ -1,0 +1,14 @@
+.box{
+    position: absolute;
+    align-self:flex-end baseline;
+    right:10%;
+}
+
+.items{
+display: flex;
+gap: 2rem;
+font-size: larger;
+color: black;
+font-weight: 700;
+
+}
