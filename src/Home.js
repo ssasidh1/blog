@@ -9,10 +9,11 @@ const navGrovify= ()=>{
 }
   return (
     <main className={styles.main}>
-      
       <div className={styles['header']}>
       <Header/>
       </div>
+      <div className={styles.mainCard}>
+      
       <div className={styles['journey']}>My Journey so far...</div>
       <div className={styles['body']} >
             
@@ -28,7 +29,7 @@ const navGrovify= ()=>{
               <div className={styles['sub']}> - music streaming app</div>
               </div>
             </a>
-            <a className={`${styles.ga} ${styles.common}`} href="/#/projects/ga" target="_blank">
+            <a className={`${styles.ga} ${styles.common}`} href="/#/projects/ga" >
             <img className={styles['rfsuny']}src="./suny-rf.png"/>
             <img className={styles['BLe']}src="./ble.png"/>
             <img className={styles['adc']}src="./adc.png"/>
@@ -48,30 +49,31 @@ const navGrovify= ()=>{
             <img className={styles['note5']}src="./note5.png"/>
             <div className={styles['grovify-app']}>Jot
               <div className={styles['sub']}> - note taking app</div>
-              </div>
+            </div>
             </a>
            
-            <div className={`${styles.parkinglot} ${styles.common}`}>
+            <a disabled={true} className={`${styles.parkinglot} ${styles.common}`}  href="/#/projects/spotter" >
             <img className={styles['parking1']}src="./parking1.png"/>
              <img className={styles['parking2']}src="./aws.png"/>
             <img className={styles['parking3']}src="./parking3.png"/>
             <img className={styles['parking4']}src="./aws2.png"/>
             <div className={styles['grovify-app']}>Spotter
-              <div className={styles['sub']}> - parking assistant app</div>
-              </div>
+            <div className={styles['sub']}> - parking assistant app</div>
             </div>
+            </a>
            
-            <div className={`${styles.plantdecay} ${styles.common}`}>
-              Plant decay detection (yet to add)
+            <div className={`${styles.amazonReviews} ${styles.common}`}>
+              Amazon Review- Customer Satisfaction Analysis (yet to add)
             </div>
-            <div className={`${styles.risc} ${styles.common}`}>
-              Computer Architecture designs (yet to add)
-            </div>
+            
             <div className={`${styles.dance} ${styles.common}`}>
               Dance achievements (yet to add)
             </div>
             <div className={`${styles.infosys} ${styles.common}`}>
               My role at Infosys (yet to add)
+            </div>
+            <div className={`${styles.rover} ${styles.common}`}>
+              Land Rover- Agricultural Aid (yet to add)
             </div>
             <div className={`${styles.ni} ${styles.common}`}>
               My role in National Instruments (yet to add)
@@ -80,7 +82,7 @@ const navGrovify= ()=>{
               Redpal - elderly monitoring wristwatch (yet to add)
             </div>
       </div>
-      
+      </div>
     </main>
   )
 }

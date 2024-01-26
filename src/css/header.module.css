@@ -1,15 +1,16 @@
 .fname{
     position: absolute;
-    color: darkslategray;
+    color: rgb(224, 243, 243);
     font-family: var(--font-mono);
     font-size: 40px;
     font-weight: 600;
     left:15rem;
+    cursor: pointer;
 }
 
 .lname{
     position: absolute;
-    color: darkslategray;
+    color: rgb(192, 212, 212);
     font-family: var(--font-mono);
     font-size: 20px;
     font-weight: 600;
@@ -17,11 +18,9 @@
 }
 
 .header-list{
-    position: relative;
     display: flex;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
-    gap:20rem;
     flex-direction: row;
     align-items: center;
     align-content: space-between;
