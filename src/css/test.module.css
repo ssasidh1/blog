@@ -2,22 +2,75 @@
     position: relative;
     height: 100vh !important;
     width: 100vw !important;
-    
+    background-color: rgb(27, 26, 26);
     margin: 0rem !important;
     overflow: hidden !important;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
-  #image-track > .image{
+ .common{
+    border:solid 5px red;
     width: 35vmin;
-    height:40vmin;
+    height:45vmin;
     object-fit:cover;
     object-position: center;
+    cursor: pointer;
 
 }
   #image-track{
     display: flex;
-    gap: 4vmin;
+    gap: 3vmin;
     position: absolute;
-    left: 50%; 
-    top: 50%;
-    transform: translate(0%,-50%);
+    top:100%;
+    background-color: white;
+  }
+
+  .work{
+    color: rgb(218, 212, 212);
+  }
+  .about{
+    color: rgb(143, 143, 143);
+    
+  }
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3vmin;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .name{
+    
+    color: whitesmoke;
+    font-size: 5vmin;
+    font-weight: 700;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+  }
+  .punchline{
+    color: rgb(162, 160, 160);
+    font-family:"Kaushan Script", cursive;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .under-construction{
+    margin-left: 1rem;
+
+  }
+  .caption{
+    color:silver;
+    font-size: smaller;
+  }
+  .grovify:hover .tooltiptext{
+    visibility: visible;
+  }
+  .tooltiptext{
+    visibility: hidden;
+    background-color: white;
   }
