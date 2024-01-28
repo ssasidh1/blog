@@ -13,7 +13,7 @@
     padding: 0.4rem 1rem;
     display: flex;
     flex-direction: column;
-    background:linear-gradient(120deg,rgb(195, 213, 215)  , rgb(97, 144, 154) 80% );
+    background:linear-gradient(120deg,rgb(230, 239, 240)  , rgb(196, 206, 120) 80% );
     gap:2rem;
     border-radius: 0.75rem;
   }
@@ -57,7 +57,7 @@
     width:300px;
     height: 250px;
     opacity: 0.78;
-    background:linear-gradient(120deg,rgb(33, 2, 52)  , rgb(161, 200, 207) 80% );
+    background:linear-gradient(120deg,rgb(128, 128, 4)  , rgb(176, 207, 161) 80% );
    border-radius: 0.5rem;
    border: solid 1px rgb(77, 76, 76) !important;
    box-shadow: 5px 2px ;

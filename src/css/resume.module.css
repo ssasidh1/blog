@@ -1,16 +1,18 @@
 .body{
-   height: 100vh;
+   height: 100%;
    width: 100vw;
    background-color: whitesmoke;
-   padding: 0.4rem 4rem;
+   padding: 0.4rem 12rem;
    box-sizing: border-box;
 }
 .sheet{
     background:linear-gradient(100deg,rgb(251, 188, 5)  , rgb(245, 214, 123) 80% );
-    padding: 0.4rem 1rem;
+    padding: 2rem 6rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.5rem;
+
 }
 
 .contact{
@@ -27,9 +29,66 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
 .icon{
     margin-left: 1rem;
     margin-right: 0.25rem;
+}
+.title{
+    font-weight: bolder;
+}
+.course{
+    display: flex;
+    align-content: space-between;
+    gap:15rem;
+}
+.headers{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+}
+.title{
+    margin-bottom: 0.25rem;
+}
+.tech-title{
+    font-weight: bolder;
+}
+
+.education{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    margin-bottom: 0.5rem;
+}
+.related{
+    display: flex;
+    gap:0.5rem;
+}
+.related{
+    font-style: italic;
+}
+.tech{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+.prj-title{
+    display: flex;
+    align-items: center;
+}
+.prj-url{
+    display: flex;
+    align-items: center;
+}
+.prj{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+ul{
+    margin-block-start: 0 !important;
+    padding-inline-start:1em !important;
 }
