@@ -7,6 +7,7 @@ import Jot from './jot';
 import GA from './GA';
 import Parkinglot from './parkinglot';
 import Resume from './resume';
+import Test from './test';
 function App() {
   return (
      <Routes>
@@ -17,6 +18,7 @@ function App() {
      <Route path="/projects/ga" element={<GA/>} />
      <Route path="/projects/spotter" element={<Parkinglot/>} />
      <Route path="/resume" element={<Resume/>} />
+     <Route path="/test" element={<Test/>} />
      
   </Routes>
   );
