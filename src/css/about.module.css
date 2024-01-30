@@ -1,0 +1,40 @@
+.about-main{
+    color:rgba(245, 245, 245, 0.783)
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    width: 700px;
+    font-size: 50px;
+}
+.para{
+    width: 700px;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.para2{
+    width: 700px;
+    font-size: 40px;
+}
+.title{
+    font-size: 30px;
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 700px;
+    gap: 0.5rem;
+}
+a{
+    color: whitesmoke;
+    cursor: pointer;
+}

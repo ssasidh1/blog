@@ -1,0 +1,37 @@
+.work{
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+  }
+  .work:hover{
+    color: rgb(218, 212, 212);
+  }
+  .about{
+    color: rgb(218, 212, 212);
+    cursor: pointer;
+    
+  }
+ 
+
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3vmin;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .name{
+    
+    color: rgba(245, 245, 245, 0.662);
+    font-size: 5vmin;
+    font-weight: 700;
+    font-size: 70px;
+  }
+  .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    padding: 1rem 1rem;
+  }

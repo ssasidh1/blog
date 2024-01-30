@@ -10,6 +10,7 @@ import Resume from './resume';
 import Test from './test';
 import Agrimation from './Agrimation';
 import Dance from './Dance';
+import About from './about';
 function App() {
   return (
      <Routes>
@@ -23,6 +24,7 @@ function App() {
      <Route path="/home" element={<Test/>} />
      <Route path="/projects/agrimation" element={<Agrimation/>} />
      <Route path="/projects/dance" element={<Dance/>} />
+     <Route path="/about" element={<About/>} />
   </Routes>
   );
 }
