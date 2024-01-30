@@ -13,7 +13,7 @@ const [prevPercentage, setPrevPercentage] = useState(0.0);
 const [percentage, setPercentage] = useState(0.0);
 const [nextPercent, setnextPercent] = useState(10);
 const [trackStyle, setTrackStyle] = useState({
-    transform: `translate(${nextPercent}%, -50%)`, 
+    transform: `translate(${nextPercent}%, -60%)`, 
     transition: 'all 1s'
   });
   const [imageStyle, setImageStyle] = useState({
@@ -39,7 +39,7 @@ const handleMove = e =>{
     console.log("nextPoten",nextPercentPotential,nextPercent);
     setPercentage(nextPercent)
     setTrackStyle({
-        transform: `translate(${nextPercent}%, -50%)`
+        transform: `translate(${-10 +nextPercent}%,-60%)`
        ,  transition: 'all 1s'
        });
       
