@@ -52,10 +52,15 @@ opacity: 1;
   }
   .work{
     color: rgb(218, 212, 212);
+    cursor: pointer;
   }
   .about{
     color: rgb(143, 143, 143);
+    cursor: pointer;
     
+  }
+  .about:hover{
+    color: rgb(218, 212, 212);
   }
   .nav-bar{
     display: flex;
@@ -99,4 +104,10 @@ opacity: 1;
   .tooltiptext{
     visibility: hidden;
     background-color: white;
+  }
+  .tap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: silver;
   }

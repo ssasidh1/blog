@@ -9,7 +9,7 @@ function Navbar() {
                 <div className={styles['Projects']}>Projects</div>
                 <div className={styles['Resume']} onClick={()=>nav('/resume')}>Resume</div>
                 <div className={styles['About']}>About</div>
-                <div className={styles['Contact']} onClick={()=>nav('/test')}>Contact</div>
+                <div className={styles['Contact']} onClick={()=>nav('/home')}>Contact</div>
         </div>
       
     </div>

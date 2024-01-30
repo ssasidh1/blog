@@ -1,0 +1,11 @@
+.tiles{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    gap: 1rem;
+    padding: 2rem 10rem;
+}
+.image{
+    height: 400px;
+    width: 500px;
+    object-fit:contain;
+}

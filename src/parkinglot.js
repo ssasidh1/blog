@@ -1,8 +1,12 @@
 import React from 'react'
 import styles from './css/parkinglot.module.css'
+import style from './css/test.module.css'
+import Header3 from './Header3'
 function Parkinglot() {
   return (
-    <div>
+    <div className={styles['parking-body']}>
+    <Header3 />
+    <div  className={styles['parking-main']}>
     <h2>Application UI</h2>
     <img src="./app.png" className={styles['app']}/>
       <h2>Motivation:</h2>
@@ -23,6 +27,7 @@ function Parkinglot() {
             <li>Reciprocate the exact pattern of the parking space.</li>
             <li>SNS based notification system to keep user alerted when there is a vacant spot. </li>
         </ul>
+        </div>
     </div>
   )
 }

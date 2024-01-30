@@ -8,3 +8,10 @@
 .app{
     height: 40rem;
 }
+
+.parking-main{
+    color:white;
+}
+.parking-body{
+    padding: 1rem 5rem;
+}

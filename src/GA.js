@@ -1,14 +1,14 @@
 
 import React from 'react'
-import styles from './css/home.module.css'
+import styles from './css/test.module.css'
 import Header from './Header'
+import style from './css/ga.module.css'
+import Header3 from './Header3'
 function GA() {
   return (
-    <main className={styles.main}>
-    <div className={styles['header']}>
-    <Header/>
-    </div>
-    <div>
+    <div className={styles['body']}>
+    <Header3/>
+    <div className={style['ga-main']}>
       <h2>Role:</h2>
       <p>Research Assistant under Dr. Kanad Ghose</p>
         <h2>Tools: </h2>
@@ -29,7 +29,7 @@ function GA() {
         </ul>
 
     </div>
-    </main>
+    </div>
   )
 }
 

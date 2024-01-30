@@ -3,7 +3,9 @@ import { useState } from 'react';
 import Navbar from './Navbar';
 import ConstructionIcon from '@mui/icons-material/Construction';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
 import { useNavigate } from 'react-router-dom';
+import Header2 from './Header2';
 export default function Test(){
 const nav = useNavigate()
 const [mouseDownAt, setMouseDownAt] = useState(0.0);
@@ -56,22 +58,24 @@ const handleGrovify = ()=>{
     console.log("doubleclick")
     window.open('https://grovify.nidhiworks.com','_blank')
 }
+const handleJot = ()=>{
+    console.log("doubleclick")
+    window.open('https://jot.nidhiworks.com','_blank')
+}
 
 return(
     <div className={styles['body']}>
         <ConstructionIcon className={styles['under-construction']} sx={{color:'silver', height:'2rem'}}/>
         <div className={styles['caption']} >Under Construction</div>
-        <div className={styles['header']}>
-        <div className={styles['nav-bar']}>
-        <div className={styles['work']}>Work</div>
-        <div className={styles['about']}>About</div>
-       </div>
-        <div className={styles['name']}>SRINIDHI SASIDHARAN</div>
-       
-       <div className={styles['punchline']}>Tap and hover over to unfold the story behind each snap</div>
-       </div>
+        <Header2/>
+        
+        
     <div  id= {styles['image-track']} style={trackStyle} onClick = {(e)=>handleDown(e)} onMouseMove={handleMove}
        onMouseUp={handleUp} >
+        <div className={`${styles.tap}`}>
+            <KeyboardDoubleArrowRightIcon sx={{color:'silver' ,height:'5rem',width:'5rem'}}/>
+            <div>Tap & slide to Navigate</div>
+        </div>
         <div className={`${styles.image}`}>
         <img className={`${styles.common} ${styles.grovify}`} style = {imageStyle} src="./pl2.png" draggable="false"  />
         <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
@@ -81,38 +85,41 @@ return(
         </div>
         <div className={`${styles.image}`}>
         <img className={`${styles.common} ${styles.ga}`} style = {imageStyle} src="./emb1.png" draggable="false" />
-        <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
+        <div className={styles['tooltip']} onDoubleClick={()=>nav("/projects/ga")}>
              <div>Double click to open</div>
              <div>Tap and slide to navigate</div>  <OpenInNewIcon sx={{color:"silver"}}  /></div>
         </div>
         <div className={`${styles.image}`}>
         <img className={`${styles.common} ${styles.notes}`} style = {imageStyle} src="./note-img2.png" draggable="false" />
-        <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
+        <div className={styles['tooltip']} onDoubleClick={handleJot}>
              <div>Double click to open</div> <div>Tap and slide to navigate</div> <OpenInNewIcon sx={{color:"silver"}}  /></div>
         </div>
         <div className={`${styles.image}`}>
-        <img className={`${styles.common} ${styles.parking}`} style = {imageStyle} src="./reviews.png" draggable="false" />
-        <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
+        <img className={`${styles.common} ${styles.parking}`} style = {imageStyle} src="./spot.png" draggable="false" />
+        <div className={styles['tooltip']} onDoubleClick={()=>nav("/projects/spotter")}>
              <div>Double click to open</div> <div>Tap and slide to navigate</div> <OpenInNewIcon sx={{color:"silver"}}  /></div>
         </div>
         <div className={`${styles.image}`}>
+        <img className={`${styles.common} ${styles.rover}`} style = {imageStyle} src="./rover.png" draggable="false" />
+        <div className={styles['tooltip']} onDoubleClick={()=>nav("/projects/agrimation")}>
+             <div>Double click to open</div><div>Tap and slide to navigate</div>  <OpenInNewIcon sx={{color:"silver"}}  /></div>
+        </div>
+        
+        {/* <div className={`${styles.image}`}>
         <img className={`${styles.common} ${styles.amazon}`} style = {imageStyle} src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
         <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
              <div>Double click to open</div> <div>Tap and slide to navigate</div> <OpenInNewIcon sx={{color:"silver"}}  /></div>
         </div>
+        
         <div className={`${styles.image}`}>
         <img className={`${styles.common} ${styles.infosys}`} style = {imageStyle} src="https://images.unsplash.com/photo-1496753480864-3e588e0269b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80" draggable="false" />
         <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
              <div>Double click to open</div><div>Tap and slide to navigate</div>  <OpenInNewIcon sx={{color:"silver"}}  /></div>
-        </div>
+        </div> */}
+        
         <div className={`${styles.image}`}>
-        <img className={`${styles.common} ${styles.rover}`} style = {imageStyle} src="https://images.unsplash.com/photo-1613346945084-35cccc812dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80" draggable="false" />
-        <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
-             <div>Double click to open</div><div>Tap and slide to navigate</div>  <OpenInNewIcon sx={{color:"silver"}}  /></div>
-        </div>
-        <div className={`${styles.image}`}>
-        <img className={`${styles.common} ${styles.dance}`} style = {imageStyle} src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" /> 
-        <div className={styles['tooltip']} onDoubleClick={handleGrovify}>
+        <img className={`${styles.common} ${styles.dance}`} style = {imageStyle} src="./Soloimg.jpeg" draggable="false" /> 
+        <div className={styles['tooltip']} onDoubleClick={()=>nav('/projects/dance')}>
              <div>Double click to open</div><div>Tap and slide to navigate</div> <OpenInNewIcon sx={{color:"silver"}}  /></div>
         </div>
         

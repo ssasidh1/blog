@@ -8,18 +8,21 @@ import GA from './GA';
 import Parkinglot from './parkinglot';
 import Resume from './resume';
 import Test from './test';
+import Agrimation from './Agrimation';
+import Dance from './Dance';
 function App() {
   return (
      <Routes>
    
-     <Route path="/*" element={<Home />} />
+     <Route path="/*" element={<Test />} />
      <Route path="/projects/grovify" element={<Grovify/>} />
      <Route path="/projects/jot" element={<Jot/>} />
      <Route path="/projects/ga" element={<GA/>} />
      <Route path="/projects/spotter" element={<Parkinglot/>} />
      <Route path="/resume" element={<Resume/>} />
-     <Route path="/test" element={<Test/>} />
-     
+     <Route path="/home" element={<Test/>} />
+     <Route path="/projects/agrimation" element={<Agrimation/>} />
+     <Route path="/projects/dance" element={<Dance/>} />
   </Routes>
   );
 }
