@@ -70,7 +70,7 @@ return(
         <Header2/>
         
         
-    <div  id= {styles['image-track']} style={trackStyle} onClick = {(e)=>handleDown(e)} onMouseMove={handleMove}
+    <div  id= {styles['image-track']} style={trackStyle} onMouseDown = {(e)=>handleDown(e)} onMouseMove={handleMove}
        onMouseUp={handleUp}  onTouchMove={handleMove} onTouchEnd={handleUp} onTouchStart={(e)=>handleDown(e)}>
         <div className={`${styles.tap}`}>
             <KeyboardDoubleArrowRightIcon sx={{color:'silver' ,height:'5rem',width:'5rem'}}/>
