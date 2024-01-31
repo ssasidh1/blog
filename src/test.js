@@ -71,7 +71,7 @@ return(
         
         
     <div  id= {styles['image-track']} style={trackStyle} onMouseDown = {(e)=>handleDown(e)} onMouseMove={handleMove}
-       onMouseUp={handleUp}  onTouchMove={handleMove} onTouchEnd={handleUp} onTouchStart={(e)=>handleDown(e)}>
+       onMouseUp={handleUp}  onTouchMove={(e)=>handleMove(e.touches[0])} onTouchEnd={(e)=>handleUp(e.touches[0])} onTouchStart={(e)=>handleDown(e.touches[0])}>
         <div className={`${styles.tap}`}>
             <KeyboardDoubleArrowRightIcon sx={{color:'silver' ,height:'5rem',width:'5rem'}}/>
             <div>Tap & slide to Navigate</div>
